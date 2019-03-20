@@ -1,0 +1,20 @@
+.m-nav-2{
+  ul{
+    @include flexbox();
+    list-style-type: none;
+    li{
+      font-size: 12px;
+      color: $white;
+      padding: 0 25px;
+      &:first-child{
+        padding-left: 0;
+      }
+      &:last-child{
+        padding-right: 0;
+      }
+      a{
+        color: $white;
+      }
+    }
+  }
+}

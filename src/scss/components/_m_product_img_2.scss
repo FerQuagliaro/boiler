@@ -1,0 +1,21 @@
+.m-product-img_2{
+  &_box{
+    @include make-row(0);
+    padding: 30px !important;
+    border: 1px solid #7e878c;
+  }
+  h3{
+    padding-bottom: 25px;
+  }
+  &_box_img{
+    @include make-xs-column(6, 0);
+    img{
+      width: 100%;
+      max-width: 138px;
+      border: 1px solid #7e878c;
+    }
+  }
+  &_box_info{
+    @include make-xs-column(6);
+  }
+}

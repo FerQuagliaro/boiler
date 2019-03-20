@@ -1,0 +1,20 @@
+.m-product-grid-2{
+		> .container{
+			> .wrap {
+				> .content{
+					@include make-row;
+					> div {
+						@include make-xs-column(6);
+						@include make-sm-column(4);
+						@include make-md-column(2);
+						@include breakpoint($md){
+							width: 20%;
+							padding-right: 8px;
+							padding-left: 8px;
+						}
+					}
+				}
+			}
+		}
+
+}

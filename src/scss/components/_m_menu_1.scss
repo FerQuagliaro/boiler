@@ -1,0 +1,6 @@
+.m-menu-1 {
+	> .wrap{
+		@include flexbox();
+		@include justify-content(flex-end);
+	}
+}

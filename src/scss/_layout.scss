@@ -1,0 +1,150 @@
+body{
+  font-family: 'OpenSansRegular', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: $black;
+}
+
+#wrapper{
+    > div, > header, > main, > footer{
+        > .wrap{
+          @include make-row();
+          // @include make-xs-column(10);
+          // @include make-xs-column-push(1);
+          //
+          // @include make-lg-column(8);
+          // @include make-lg-column-push(2);
+        }
+    }
+}
+
+.container{
+  max-width: 1054px;
+}
+
+main .container{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+// HEADLINES
+h1, h2, h3{
+  color: $main-blue;
+  margin: 0;
+}
+h2{
+  font-size: 24px;
+  font-weight: 700;
+}
+h3{
+  font-size: 18px;
+  font-weight: 600;
+}
+h4{
+  color: $black;
+  font-size: 15px;
+  font-weight: 700;
+}
+.subheader1{
+  font-size: 16px;
+  font-weight: 400;
+  margin: 27px 0 0 0;
+}
+.subheader2{
+  color: $main-blue;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 27px 0 0 0;
+}
+
+// PARAGRAPH
+p{
+  margin: 20px 0;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  &.legal{
+    font-size: 11px;
+  }
+}
+
+// LISTS
+ul{
+  padding: 0;
+  margin: 0;
+}
+
+// DIVIDERS
+hr{
+  height: 1px;
+  margin: 40px 0;
+  background: $black;
+  border: 0;
+}
+
+// BUTTONS
+.btn-main{
+  background: linear-gradient(#EDB72B, #DF9210);
+  min-width: 180px;
+  margin: 30px 0 0 0;
+  padding: 10px 40px;
+  border: 0;
+  border-radius: 0;
+  font-weight: 600;
+}
+.btn-edit{
+  background: linear-gradient(#FFFFFF, #CCCCCC);
+}
+
+// FORM
+label{
+  color: $main-blue;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+// TEMPLATES
+header{
+  .container{
+    @include flexbox();
+    @include align-items(center);
+    .m-logo-1{
+      @include make-xs-column(4);
+    }
+    .m-menu-1{
+      @include make-xs-column(8);
+    }
+  }
+}
+.o-main-product-description{
+  .m-product-meta-info_1{
+    @include make-md-column(4);
+    @media (max-width: $sm){
+      @include make-xs-column(12);
+    }
+  }
+  .m-product-img_1,
+  .m-product-content_1{
+    @include make-md-column(8);
+    @media (max-width: $sm){
+      @include make-xs-column(12);
+    }
+  }
+  .m-product-content_1{
+    @include make-lg-column-push(4);
+  }
+}
+
+.o-main-shipping-info{
+  > div{
+    @include make-md-column(6);
+    @media (max-width: $sm){
+      @include make-xs-column(12);
+    }
+  }
+  .m-product-img_2{
+    padding-left: 12%;
+    @media (max-width: $sm){
+      padding-left: 0;
+    }
+  }
+}

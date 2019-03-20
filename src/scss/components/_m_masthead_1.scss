@@ -1,0 +1,60 @@
+.welcomeBG{
+  width: auto;
+  background: url(../img/bgPattern.png) repeat;
+  height: auto;
+  margin: 0px;
+  padding: 27px 51px;
+
+  > .hero {
+    max-height: 484px;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #002244;
+    border: 1px solid #8091a2;
+    padding: 48px 0;
+
+      > img {
+          margin-left: auto;
+          margin-right: auto;
+      }
+
+      > hr {
+          width: 100px;
+          border: 1px solid #fff;
+          margin: 26px auto 0px auto;
+      }
+      > h1{
+          color: #fff;
+          font-weight: 300;
+          font-size: 30px;
+          line-height: 32px;
+          margin: 0px auto 0px auto;
+          text-align: center;
+      }
+      > .header2{
+          font-size: 15px;
+          color: #fff;
+          line-height: 24px;
+          margin: 26px auto 0px auto;
+          text-align: center;
+      }
+      > .milerLvlCircle {
+          background: url(../img/milerBG.png);
+          width: 154px;
+          height: 154px;
+          position: relative;
+          margin: 0px auto 25px auto;
+          .milerLvl {
+            position: relative;
+            padding-top: 60px;
+            padding-left: 25px;
+        }
+      }
+      > div.scroll {
+          width: 24px;
+          height: 16px;
+          margin: 20px auto 0 auto;
+      }
+    }
+}

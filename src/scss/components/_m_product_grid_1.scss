@@ -1,0 +1,40 @@
+
+ .m-product-grid-1{
+   .container{
+     /* padding: 59px 0 20px 0; */
+    /*width: 1024px;*/
+    /* height: auto; */
+    /*margin: 0 auto 0 auto;*/
+    /* position: relative; */
+    /* margin-left: auto!important; */
+    /* margin-right: auto!important; */
+
+    > .wrap {
+      > .content{
+        @include make-row;
+        > div {
+          @include make-xs-column(6);
+          @include make-sm-column(3);
+          @include make-md-column(4);
+        }
+      }
+    }
+  }
+  > h2 {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: lighter;
+    color: #0B2141;
+    text-align: center;
+    margin-top: 28px;
+    }
+   .a-hr-2{
+    width: 220px;
+    height: 25px;
+    position: relative;
+    margin: 41px auto 41px auto;
+    background: url(../img/GiftOptionsSeparator.png) no-repeat 0 0;
+    z-index: 0;
+    border: 0px;
+    }
+}

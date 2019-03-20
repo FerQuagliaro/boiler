@@ -1,0 +1,22 @@
+.m-usermeta-1{
+	ul{
+		@include flexbox();
+		@include justify-content(flex-end);
+		list-style-type: none;
+		li{
+			border-right: 1px solid $main-yellow;
+			padding: 0 12px;
+			color: $main-yellow;
+			&:first-child{
+				border-left: 0;
+			}
+			&:last-child{
+				padding-right: 0;
+				border-right: 0;
+			}
+			a{
+				color: $main-yellow;
+			}
+		}
+	}
+}
